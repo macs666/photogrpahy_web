@@ -72,7 +72,9 @@ function uploadImage(Albums) {
                 else {
                     
                     var images = instance.images
-                    images.push(fileObj.files.file[0].container+"/"+fileObj.files.file[0].name)
+                    fileObj.files.file.forEach(function(image){
+                        images.push(image.container+"/"+image.name)
+                    })
                     var updateField = {
                         images:images
                     }
