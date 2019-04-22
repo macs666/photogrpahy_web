@@ -13,6 +13,6 @@
     "name": "storage",
     "connector": "loopback-component-storage",
     "provider": "filesystem",
-    "root": "/var/www/highlight/images/images-api"
+    "root": "/var/www/highlight/img/images-api"
   }
 }
