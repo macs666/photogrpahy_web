@@ -45,7 +45,6 @@ function createAlbum(Albums) {
 
 function uploadImage(Albums) {
     Albums.uploadImage = function(id,req, res, body, cb) {
-        
         Albums.findById(id, function (err, instance) {
             if (err != undefined || err != null) {
                 cb(err,null)
